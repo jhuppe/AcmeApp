@@ -1,0 +1,1 @@
+C:\Users\jerhup\Desktop\AcmeApp\Tests\Acme.BizTests\obj\Debug\Acme.BizTests.csprojResolveAssemblyReference.cache

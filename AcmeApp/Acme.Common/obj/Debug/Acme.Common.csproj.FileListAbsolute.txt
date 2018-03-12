@@ -1,0 +1,5 @@
+C:\Users\jerhup\Desktop\AcmeApp\Acme.Common\bin\Debug\Acme.Common.dll
+C:\Users\jerhup\Desktop\AcmeApp\Acme.Common\bin\Debug\Acme.Common.pdb
+C:\Users\jerhup\Desktop\AcmeApp\Acme.Common\obj\Debug\Acme.Common.csprojResolveAssemblyReference.cache
+C:\Users\jerhup\Desktop\AcmeApp\Acme.Common\obj\Debug\Acme.Common.dll
+C:\Users\jerhup\Desktop\AcmeApp\Acme.Common\obj\Debug\Acme.Common.pdb
