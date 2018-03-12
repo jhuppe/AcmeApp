@@ -19,21 +19,4 @@
         public T Result { get; set; }
         public string Message { get; set; }
     }
-    public class OperationalResultDecimal
-    {
-        public OperationalResultDecimal ()
-        {
-
-        }
-
-        public OperationalResultDecimal(decimal result, string message) : this()
-        {
-            this.Result = result;
-            this.Message = message;
-        }
-        public decimal Result { get; set; }
-        public string Message { get; set; }
-    }
-
-
 }

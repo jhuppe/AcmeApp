@@ -6,3 +6,11 @@ C:\Users\jerhup\Desktop\AcmeApp\Tests\Acme.CommonTests\bin\Debug\Acme.Common.pdb
 C:\Users\jerhup\Desktop\AcmeApp\Tests\Acme.CommonTests\obj\Debug\Acme.CommonTests.csprojResolveAssemblyReference.cache
 C:\Users\jerhup\Desktop\AcmeApp\Tests\Acme.CommonTests\obj\Debug\Acme.CommonTests.dll
 C:\Users\jerhup\Desktop\AcmeApp\Tests\Acme.CommonTests\obj\Debug\Acme.CommonTests.pdb
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\GenericsAndCollections\AcmeApp\Tests\Acme.CommonTests\bin\Debug\Acme.CommonTests.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\GenericsAndCollections\AcmeApp\Tests\Acme.CommonTests\bin\Debug\Acme.CommonTests.pdb
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\GenericsAndCollections\AcmeApp\Tests\Acme.CommonTests\bin\Debug\Acme.Common.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\GenericsAndCollections\AcmeApp\Tests\Acme.CommonTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\GenericsAndCollections\AcmeApp\Tests\Acme.CommonTests\bin\Debug\Acme.Common.pdb
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\GenericsAndCollections\AcmeApp\Tests\Acme.CommonTests\obj\Debug\Acme.CommonTests.csprojResolveAssemblyReference.cache
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\GenericsAndCollections\AcmeApp\Tests\Acme.CommonTests\obj\Debug\Acme.CommonTests.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\GenericsAndCollections\AcmeApp\Tests\Acme.CommonTests\obj\Debug\Acme.CommonTests.pdb

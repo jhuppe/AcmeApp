@@ -5,3 +5,10 @@ C:\Users\jerhup\Desktop\AcmeApp\Acme.Biz\bin\Debug\Acme.Common.pdb
 C:\Users\jerhup\Desktop\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.csprojResolveAssemblyReference.cache
 C:\Users\jerhup\Desktop\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.dll
 C:\Users\jerhup\Desktop\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.pdb
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\GenericsAndCollections\AcmeApp\Acme.Biz\bin\Debug\Acme.Biz.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\GenericsAndCollections\AcmeApp\Acme.Biz\bin\Debug\Acme.Biz.pdb
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\GenericsAndCollections\AcmeApp\Acme.Biz\bin\Debug\Acme.Common.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\GenericsAndCollections\AcmeApp\Acme.Biz\bin\Debug\Acme.Common.pdb
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\GenericsAndCollections\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.csprojResolveAssemblyReference.cache
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\GenericsAndCollections\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.dll
+C:\Users\jerhup\home\sandbox\pluralsight\CSharp\GenericsAndCollections\AcmeApp\Acme.Biz\obj\Debug\Acme.Biz.pdb

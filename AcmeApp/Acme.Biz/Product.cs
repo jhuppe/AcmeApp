@@ -1,10 +1,6 @@
 ﻿using Acme.Common;
-using static Acme.Common.LoggingService;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Acme.Biz
 {
@@ -13,27 +9,33 @@ namespace Acme.Biz
     /// </summary>
     public class Product
     {
-        //Constructors
+        #region Constructors
         public Product()
         {
-            //var colorOptions = new string[4];
-            //colorOptions[0] = "Red";
-            //colorOptions[0] = "Espresso";
-            //colorOptions[0] = "White";
-            //colorOptions[0] = "Navy";
-            string[] colorOptions = { "Red", "Espresso", "White", "Navy" };
+            //var colorOptions = new List<string>();
+            //colorOptions.Add("Red");
+            //colorOptions.Add("Espresso");
+            //colorOptions.Add("White");
+            //colorOptions.Add("Navy");
+            //colorOptions.Insert(2, "Purple");
+            //colorOptions.Remove("White");
 
-            var brownIndex = Array.IndexOf(colorOptions, "Espresso");
+            var colorOptions = new List<string>()
+                                  { "Red", "Espresso", "White", "Navy" };
 
-            for (int i = 0; i < colorOptions.Length; i++)
-            {
-                colorOptions[i] = colorOptions[i].ToLower();
-            }
-            foreach (var color in colorOptions)
-            {
-                Console.WriteLine($"The color is {color}");
-            }
+            Console.WriteLine(colorOptions);
+
         }
+
+        public Product(int productId,
+                        string productName,
+                        string description) : this()
+        {
+            this.ProductId = productId;
+            this.ProductName = productName;
+            this.Description = description;
+        }
+        #endregion
 
         #region Properties
         public DateTime? AvailabilityDate { get; set; }
@@ -47,7 +49,8 @@ namespace Acme.Biz
         private string productName;
         public string ProductName
         {
-            get {
+            get
+            {
                 var formattedValue = productName?.Trim();
                 return formattedValue;
             }
@@ -73,7 +76,8 @@ namespace Acme.Biz
         private Vendor productVendor;
         public Vendor ProductVendor
         {
-            get {
+            get
+            {
                 if (productVendor == null)
                 {
                     productVendor = new Vendor();
@@ -92,7 +96,7 @@ namespace Acme.Biz
         /// </summary>
         /// <param name="markupPercent">Percent used to mark up the cost.</param>
         /// <returns></returns>
-        public OperationalResultDecimal CalculateSuggestedPrice(decimal markupPercent)
+        public OperationResult<decimal> CalculateSuggestedPrice(decimal markupPercent)
         {
             var message = "";
             if (markupPercent <= 0m)
@@ -105,8 +109,8 @@ namespace Acme.Biz
             }
             var value = this.Cost + (this.Cost * markupPercent / 100);
 
-            var operationalResult = new OperationalResultDecimal(value, message);
-            return operationalResult;
+            var operationResult = new OperationResult<decimal>(value, message);
+            return operationResult;
         }
 
         public override string ToString()
