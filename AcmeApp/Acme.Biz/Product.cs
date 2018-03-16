@@ -20,11 +20,8 @@ namespace Acme.Biz
             //colorOptions.Insert(2, "Purple");
             //colorOptions.Remove("White");
 
-            var colorOptions = new List<string>()
-                                  { "Red", "Espresso", "White", "Navy" };
-
+            var colorOptions = new List<string>() { "Red", "Espresso", "Navy", "White" };
             Console.WriteLine(colorOptions);
-
         }
 
         public Product(int productId,

@@ -28,13 +28,14 @@ namespace Acme.Biz
                                             DateTimeOffset? deliverBy = null,
                                             string instructions = "standard delivery")
         {
+            #region Guard Clauses
             if (product == null)
                 throw new ArgumentNullException(nameof(product));
             if (quantity <= 0)
                 throw new ArgumentOutOfRangeException(nameof(quantity));
             if (deliverBy <= DateTimeOffset.Now)
                 throw new ArgumentOutOfRangeException(nameof(deliverBy));
-
+            #endregion
             var success = false;
 
             var orderTextBuilder = new StringBuilder("Order from Acme, Inc" +
@@ -44,12 +45,12 @@ namespace Acme.Biz
                             "Quantity: " + quantity);
             if (deliverBy.HasValue)
             {
-                orderTextBuilder.Append( System.Environment.NewLine +
+                orderTextBuilder.Append(System.Environment.NewLine +
                             "Deliver By: " + deliverBy.Value.ToString("d"));
             }
             if (!String.IsNullOrWhiteSpace(instructions))
             {
-                orderTextBuilder.Append( System.Environment.NewLine +
+                orderTextBuilder.Append(System.Environment.NewLine +
                             "Instructions: " + instructions);
             }
             var orderText = orderTextBuilder.ToString();
@@ -69,6 +70,35 @@ namespace Acme.Biz
         {
             return $"Vendor: {this.CompanyName} ({this.VendorId})";
         }
+
+        /// <summary>
+        /// Overridden to support comparison
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public override bool Equals(object obj)
+        {
+            if (obj == null || this.GetType() != obj.GetType())
+                return false;
+
+            Vendor compareVendor = obj as Vendor;
+            if (compareVendor != null &&
+                this.VendorId == compareVendor.VendorId &&
+                this.CompanyName == compareVendor.CompanyName &&
+                this.Email == compareVendor.Email)
+                return true;
+
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+
+
+
 
 
         /// <summary>
