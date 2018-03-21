@@ -30,7 +30,7 @@ namespace Acme.Biz
             return vendor;
         }
 
-        public List<Vendor> Retrieve()
+        public IEnumerable<Vendor> Retrieve()
         {
             if (vendors == null)
             {
@@ -42,9 +42,13 @@ namespace Acme.Biz
                 { VendorId = 2, CompanyName = "XYZ Inc", Email = "xyz@xyz.com" });
             }
 
+            for (int i = 0; i < vendors.Count; i++)
+            {
+                Console.WriteLine(vendors[i]);
+            }
             foreach (var vendor in vendors)
             {
-                Console.WriteLine(vendor);
+                //Console.WriteLine(vendor);
             }
 
             return vendors;

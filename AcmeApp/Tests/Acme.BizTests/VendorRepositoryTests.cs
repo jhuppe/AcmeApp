@@ -70,7 +70,7 @@ namespace Acme.Biz.Tests
             var actual = repository.Retrieve();
 
             //Assert
-            CollectionAssert.AreEqual(expected, actual);
+            CollectionAssert.AreEqual(expected, actual.ToList());
         }
     }
 }

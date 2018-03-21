@@ -105,14 +105,21 @@ namespace Acme.Biz
         /// Sends an email to welcome a new vendor.
         /// </summary>
         /// <returns></returns>
-        public string SendWelcomeEmail(string message)
+        public static List<string> SendEmail(ICollection<Vendor> vendors, string message)
         {
+            var confirmations = new List<string>();
             var emailService = new EmailService();
-            var subject = ("Hello " + this.CompanyName).Trim();
-            var confirmation = emailService.SendMessage(subject,
-                                                        message,
-                                                        this.Email);
-            return confirmation;
+            Console.WriteLine(vendors.Count);
+
+            foreach (var vendor in vendors)
+            {
+                var subject = "Important message for:  " + vendor.CompanyName;
+                var confirmation = emailService.SendMessage(subject,
+                                                            message,
+                                                            vendor.Email);
+                confirmations.Add(confirmation);
+            }
+            return confirmations;
         }
     }
 }
